@@ -1,0 +1,16 @@
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.exe.config
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\bin\Debug\DBoperations.dll
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\bin\Debug\DBoperations.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.csprojResolveAssemblyReference.cache
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.exe.config
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.exe
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\bin\Debug\Server_Torrent.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\bin\Debug\DBoperations.dll
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\bin\Debug\DBoperations.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.csprojResolveAssemblyReference.cache
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.exe
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Server_Torrent\obj\x86\Debug\Server_Torrent.pdb

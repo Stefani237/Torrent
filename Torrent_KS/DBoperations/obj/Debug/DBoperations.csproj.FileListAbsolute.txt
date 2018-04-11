@@ -1,0 +1,9 @@
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\DBoperations\bin\Debug\DBoperations.dll
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\DBoperations\bin\Debug\DBoperations.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\DBoperations\obj\Debug\DBoperations.dll
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\DBoperations\obj\Debug\DBoperations.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\DBoperations\bin\Debug\DBoperations.dll
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\DBoperations\bin\Debug\DBoperations.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\DBoperations\obj\Debug\DBoperations.dll
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\DBoperations\obj\Debug\DBoperations.pdb
+C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\DBoperations\obj\Debug\DBoperations.csprojResolveAssemblyReference.cache

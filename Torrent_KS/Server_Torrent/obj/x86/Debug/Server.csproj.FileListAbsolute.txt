@@ -1,0 +1,8 @@
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\bin\Debug\Server.exe.config
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\bin\Debug\Server.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\bin\Debug\Server.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\bin\Debug\DBoperations.dll
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\bin\Debug\DBoperations.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\obj\x86\Debug\Server.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\Server\obj\x86\Debug\Server.pdb

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="checkUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="manageUserList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="str2" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="manageUserListResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SignInDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignInDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertFilesRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="size" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFilesRecordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Connection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsUserAdmin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserAdminResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserAdminResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFileListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFileListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSearchResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSearchResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSearchResultResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCountClients">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCountClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getCountClientsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCountFiles">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCountFilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getCountFilesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getConnectedClients">
+        <s:complexType />
+      </s:element>
+      <s:element name="getConnectedClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getConnectedClientsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="checkUserSoapIn">
+    <wsdl:part name="parameters" element="tns:checkUser" />
+  </wsdl:message>
+  <wsdl:message name="checkUserSoapOut">
+    <wsdl:part name="parameters" element="tns:checkUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="manageUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:manageUserList" />
+  </wsdl:message>
+  <wsdl:message name="manageUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:manageUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignInDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:SignInDetails" />
+  </wsdl:message>
+  <wsdl:message name="SignInDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:SignInDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertFilesRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertFilesRecord" />
+  </wsdl:message>
+  <wsdl:message name="InsertFilesRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertFilesRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:Connection" />
+  </wsdl:message>
+  <wsdl:message name="ConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserAdminSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IsUserAdminSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileListSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileList" />
+  </wsdl:message>
+  <wsdl:message name="getFileListSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSearchResultSoapIn">
+    <wsdl:part name="parameters" element="tns:getSearchResult" />
+  </wsdl:message>
+  <wsdl:message name="getSearchResultSoapOut">
+    <wsdl:part name="parameters" element="tns:getSearchResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCountClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:getCountClients" />
+  </wsdl:message>
+  <wsdl:message name="getCountClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:getCountClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCountFilesSoapIn">
+    <wsdl:part name="parameters" element="tns:getCountFiles" />
+  </wsdl:message>
+  <wsdl:message name="getCountFilesSoapOut">
+    <wsdl:part name="parameters" element="tns:getCountFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getConnectedClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:getConnectedClients" />
+  </wsdl:message>
+  <wsdl:message name="getConnectedClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:getConnectedClientsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MyTorrentServiceSoap">
+    <wsdl:operation name="checkUser">
+      <wsdl:input message="tns:checkUserSoapIn" />
+      <wsdl:output message="tns:checkUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="manageUserList">
+      <wsdl:input message="tns:manageUserListSoapIn" />
+      <wsdl:output message="tns:manageUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignInDetails">
+      <wsdl:input message="tns:SignInDetailsSoapIn" />
+      <wsdl:output message="tns:SignInDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFilesRecord">
+      <wsdl:input message="tns:InsertFilesRecordSoapIn" />
+      <wsdl:output message="tns:InsertFilesRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Connection">
+      <wsdl:input message="tns:ConnectionSoapIn" />
+      <wsdl:output message="tns:ConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserAdmin">
+      <wsdl:input message="tns:IsUserAdminSoapIn" />
+      <wsdl:output message="tns:IsUserAdminSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileList">
+      <wsdl:input message="tns:getFileListSoapIn" />
+      <wsdl:output message="tns:getFileListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSearchResult">
+      <wsdl:input message="tns:getSearchResultSoapIn" />
+      <wsdl:output message="tns:getSearchResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCountClients">
+      <wsdl:input message="tns:getCountClientsSoapIn" />
+      <wsdl:output message="tns:getCountClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCountFiles">
+      <wsdl:input message="tns:getCountFilesSoapIn" />
+      <wsdl:output message="tns:getCountFilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getConnectedClients">
+      <wsdl:input message="tns:getConnectedClientsSoapIn" />
+      <wsdl:output message="tns:getConnectedClientsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyTorrentServiceSoap" type="tns:MyTorrentServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkUser">
+      <soap:operation soapAction="http://tempuri.org/checkUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="manageUserList">
+      <soap:operation soapAction="http://tempuri.org/manageUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignInDetails">
+      <soap:operation soapAction="http://tempuri.org/SignInDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFilesRecord">
+      <soap:operation soapAction="http://tempuri.org/InsertFilesRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Connection">
+      <soap:operation soapAction="http://tempuri.org/Connection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserAdmin">
+      <soap:operation soapAction="http://tempuri.org/IsUserAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileList">
+      <soap:operation soapAction="http://tempuri.org/getFileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSearchResult">
+      <soap:operation soapAction="http://tempuri.org/getSearchResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountClients">
+      <soap:operation soapAction="http://tempuri.org/getCountClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountFiles">
+      <soap:operation soapAction="http://tempuri.org/getCountFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectedClients">
+      <soap:operation soapAction="http://tempuri.org/getConnectedClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MyTorrentServiceSoap12" type="tns:MyTorrentServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkUser">
+      <soap12:operation soapAction="http://tempuri.org/checkUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="manageUserList">
+      <soap12:operation soapAction="http://tempuri.org/manageUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignInDetails">
+      <soap12:operation soapAction="http://tempuri.org/SignInDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFilesRecord">
+      <soap12:operation soapAction="http://tempuri.org/InsertFilesRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Connection">
+      <soap12:operation soapAction="http://tempuri.org/Connection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserAdmin">
+      <soap12:operation soapAction="http://tempuri.org/IsUserAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileList">
+      <soap12:operation soapAction="http://tempuri.org/getFileList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSearchResult">
+      <soap12:operation soapAction="http://tempuri.org/getSearchResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountClients">
+      <soap12:operation soapAction="http://tempuri.org/getCountClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountFiles">
+      <soap12:operation soapAction="http://tempuri.org/getCountFiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectedClients">
+      <soap12:operation soapAction="http://tempuri.org/getConnectedClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyTorrentService">
+    <wsdl:port name="MyTorrentServiceSoap" binding="tns:MyTorrentServiceSoap">
+      <soap:address location="http://localhost:58199/MyTorrentService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MyTorrentServiceSoap12" binding="tns:MyTorrentServiceSoap12">
+      <soap12:address location="http://localhost:58199/MyTorrentService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

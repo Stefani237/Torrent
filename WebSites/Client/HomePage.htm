@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #users
+        {
+            width: 200px;
+            height: 30px;
+        }
+        #files
+        {
+            width: 200px;
+            height: 30px;
+        }
+        #register
+        {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+
+        function users_onclick() {
+            window.location.href = "UserControlPage.aspx";
+        }
+
+        function signOut_onclick() {
+            window.location.href = "RegisterPage.aspx";
+        }
+
+        function files_onclick() {
+            window.location.href = "FileControlPage.aspx";
+        }
+
+// ]]>
+    </script>
+</head>
+<body>
+    <h1>Admin Home Page</h1>
+    &nbsp;&nbsp;
+    <p>
+        &nbsp;</p>
+    <p>
+    <input id="users" type="button" value="User Control" onclick="return users_onclick()" /></p>
+    <p>
+    <input id="files" type="button"value="File Management" onclick="return files_onclick()" /></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <input id="signOut" type="button" value="Sign Out" onclick="return signOut_onclick()" /></p>
+</body>
+</html>

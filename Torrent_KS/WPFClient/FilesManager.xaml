@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFClient.FilesManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Closing="Window_Closing"  
+        Title="FielsManager" Height="492" Width="585">
+    <Grid>
+        <Label Content="WELCOME!" Height="66" HorizontalAlignment="Left" Margin="156,12,0,0" Name="welcome_lbl" VerticalAlignment="Top" FontSize="36" />
+        <Label Content="File to download:" Height="37" HorizontalAlignment="Left" Margin="12,71,0,0" Name="download_lbl" VerticalAlignment="Top" FontSize="16" Width="197" />
+        <Label Content="File to upload:" Height="32" HorizontalAlignment="Left" Margin="12,374,0,0" Name="upload_lbl" VerticalAlignment="Top" FontSize="16" Width="120" />
+        <TextBox Height="29" HorizontalAlignment="Left" Margin="12,412,0,0" Name="upload_txt" VerticalAlignment="Top" Width="390" FontSize="16" TextChanged="upload_txt_TextChanged" />
+        <Button Content="Upload" Height="29" HorizontalAlignment="Left" Margin="477,412,0,0" Name="upload_btn" VerticalAlignment="Top" Width="83" Click="upload_btn_Click" />
+        <DataGrid AutoGenerateColumns="True" Height="167" HorizontalAlignment="Left" Margin="12,161,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="265" SelectionChanged="dataGrid1_SelectionChanged" ItemsSource="{Binding}" DataContext="{Binding}" Loaded="dataGrid1_Loaded" SelectedCellsChanged="dataGrid1_SelectedCellsChanged" />
+        <Button Content="Find File" Height="31" HorizontalAlignment="Right" Margin="0,114,17,0" Name="findFile_btn" VerticalAlignment="Top" Width="83" Click="file_btn_Click" />
+        <TextBox Height="29" HorizontalAlignment="Left" Margin="12,114,0,0" Name="search_txt" VerticalAlignment="Top" Width="390" />
+        <Button Content="Show All Files" Height="30" HorizontalAlignment="Left" Margin="319,161,0,0" Name="showAllFiles_btn" VerticalAlignment="Top" Width="83" Click="showAllFiles_btn_Click" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="179,374,0,0" Name="error_lbl" VerticalAlignment="Top" Foreground="#FFFF1313" Width="223" />
+        <Label x:Name="selected_row_lbl" Content="" HorizontalAlignment="Left" Margin="43,343,0,0" VerticalAlignment="Top" Width="394"/>
+        <Button x:Name="download_btn" Content="Download" HorizontalAlignment="Left" Margin="319,298,0,0" VerticalAlignment="Top" Width="83" Height="30" RenderTransformOrigin="1.682,0.6" Click="download_btn_Click"/>
+        <Button x:Name="dll_btn" Content="Show DLL" HorizontalAlignment="Left" Margin="319,229,0,0" VerticalAlignment="Top" Width="83" Height="30" Click="dll_btn_Click"/>
+        <Label x:Name="search_error_lbl" Content="" HorizontalAlignment="Left" Margin="209,75,0,0" VerticalAlignment="Top" Width="193" Foreground="#FFDE2424"/>
+        <Label x:Name="dll_error_lbl" Content="" HorizontalAlignment="Left" Height="30" Margin="425,229,0,0" VerticalAlignment="Top" Width="135" Foreground="#FFF51111"/>
+    </Grid>
+</Window>

@@ -1,0 +1,4 @@
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\ClientTry\bin\Debug\ClientTry.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\ClientTry\bin\Debug\ClientTry.pdb
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\ClientTry\obj\x86\Debug\ClientTry.exe
+C:\Users\Stefani\Documents\Visual Studio 2010\Projects\Torrent_KS\ClientTry\obj\x86\Debug\ClientTry.pdb

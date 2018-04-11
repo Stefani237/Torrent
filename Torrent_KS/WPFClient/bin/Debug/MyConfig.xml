@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserName>Stefani Tamari</UserName>
+  <Password>123456</Password>
+  <IpAddress>10.20.225.61</IpAddress>
+  <Port>8006</Port>
+  <Path>C:\Users\afeka\Documents\Visual Studio 2015\Projects\Torrent_KS\Files_Folder</Path>
+</Information>
